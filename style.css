@@ -1,0 +1,31 @@
+/* background colors and body width */
+html {
+    background-color: #7ABFBF;
+}
+
+body {
+    width:1280px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+}
+/* this removes top margin space */
+h1 {
+    margin-top:0;
+    padding-top:100px;
+}
+/* nav bar */
+
+nav {
+    position:absolute;
+    top:0;
+    width:1280px;
+    margin: 0 auto;
+}
+ul {
+    display:grid;
+    grid-template-columns: 200px 150px 100px 100px 100px 100px 100px 100px 150px 200px;
+}
+li {
+    display:inline-block;
+}
