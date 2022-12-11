@@ -40,8 +40,7 @@ nav {
     width:1280px;
     height:110px;
     box-shadow: -1px 9px 8px rgba(0, 0, 0, 0.2); 
-	-webkit-box-shadow: -1px 9px 8px rgba(0, 0, 0, 0.2); 
-	-moz-box-shadow: -1px 9px 8px rgba(0, 0, 0, 0.2); 
+	
 }
 nav ul {
     display:grid;
@@ -159,11 +158,13 @@ section img {
     color: #7ABFBF;
 }
 .details-section > h3 {
-    padding-top:5px;
+    padding-top:10px;
     margin-top:0;
+    margin-bottom:7px;
 }
 .details-section > ul {
-padding-right:4px;
+padding-right:42px;
+margin-top:0;
     
 }
 
@@ -175,14 +176,28 @@ padding-right:4px;
     padding-bottom: 10px;
     font-family: 'Montserrat', sans-serif;
     font-size:16px;
+    width:98px;
 
 }
+.details-section > ul > li:nth-child(3) {
+    width: 96px;
+}
+.details-section > ul > li:nth-child(4) {
+    width: 94px;
+}
+.details-section > ul > li:nth-child(5) {
+    width: 75px;
+}
+
 
 /* directions / ingredients sections */
 
 .directions-ingredients-section {
     display:flex;
 
+}
+.directions-ingredients-section h3 {
+    margin-top:0;
 }
  .ingredient-list > li {
     text-align: left;
@@ -294,19 +309,19 @@ body {
 /* nav responsive */
  nav {
     width:768px;
-    height:150px;
+    height:170px;
     position:absolute;
 }
 .medium-nav {
     position: relative;
-    top:50px;
+    top:64px;
     right:261px;
 }
 
 nav li:first-child {
     position: relative;
-    height: 35px;
-    width: 61px;
+    height: 53px;
+    width: 75px;
     
 }
 nav li:last-child {
@@ -317,26 +332,33 @@ nav li:last-child {
 }
 .icon-tabler-tools-kitchen {
     position: relative;
-    bottom:15px;
-    width:40px;
-    height:40px;
+    bottom: 9px;
+    width: 50px;
+    height: 50px;
 }
 .icon-tabler-user-circle {
     width:25px;
     height:25px;
 }
+.black-letter {
+    font-size:16px;
+    padding-top:-5px;
+}
+
 /* form responsive */
+
 form {
-    position:absolute;
-    width:300px;
-    top:-3px;
-    margin-left: 200px;
+    position: absolute;
+    width: 768px;
+    margin-right: -518px;
+    top: 6px;
 }
 /* street tacos section */
 h2 {
-    padding-top:170px; 
-    padding-left:20px;
+    padding-top:195px; 
+    padding-left:15px;
     text-align: left;
+    font-size: 30px;
 }
 .street-tacos-flex {
     display: grid;
@@ -348,7 +370,7 @@ menu {
     border:0;
     background-color: rgba(255, 255, 255, 0.7);
     position:absolute;
-    top:218px;
+    top:250px;
 }
 menu li{
     display: inline-block;
@@ -364,19 +386,23 @@ section img {
     padding-bottom:10px;
 }
 /* details section */
-.details-section {
+
+ .details-section {
     background: none;
     color: #0D0D0D;
     position: relative;
-    top: 514px;
+    top: 650px;
     width: 685px;
     left: 70px;
 }
+
 .details-section > ul > li {
     list-style-type: none;
-    font-weight: bold;
     padding-bottom:5px;
+    display: block;
+    width:400px;
 }
+
 .details-section > ul {
     margin:0;
 }
@@ -384,25 +410,40 @@ section img {
     padding-right: 34px;
     padding-top:25px;
     margin-bottom:10px;
+    font-size: 30px;
+} 
+.details-section > ul > li:nth-child(3) {
+    width: 400px;
 }
+.details-section > ul > li:nth-child(4) {
+    width: 400px;
+}
+.details-section > ul > li:nth-child(5) {
+    width: 400px;
+}
+
 /* directions / ingredients section */
 .directions-ingredients-section {
     position: relative;
     width:768px;
-    padding-top: 491px;
+    padding-top: 659px;
+}
+.directions-ingredients-section h3 {
+    margin-bottom:-6px;
 }
 .ingredient-list > li {
     text-align: left;
     padding:5px;
-    width: 100px;
+    width: 200px;
  }
  .direction-list {
-    width:550px;
+    width:460px;
  }
 
  div > h3 {
      text-align: center;
      padding-left:40px;
+     font-size: 30px;
  }
 /* more dishes aside */
 
@@ -410,7 +451,7 @@ aside {
     position: relative;
     top: -35px;
     width:768px;
-    height:227px;
+    height:284px;
 }
 aside img {
     width:70px;
@@ -455,7 +496,12 @@ footer ul {
     width: 400px;
     
 }
+footer li {
+    padding:0;
 }
+}
+
+
 
 @media screen and (min-width: 250px) and (max-width:500px) {
     body {
@@ -482,7 +528,7 @@ footer ul {
     }
     nav li:first-child {
         position: relative;
-        left:85px;
+        left:89px;
         height: 60px;
         width: 245px;
     }
@@ -501,20 +547,22 @@ footer ul {
     /* search bar */
     form {
         position: absolute;
-        top: 105px;
-        left: 429px;
-        display: inline-block;
-        width: 358px;
+        left: 212px;
+        width: 414px;
+        top: 94px;
     }
+        
+    
     /* street tacos section */
     h2 {
-        padding-top:170px; 
-        padding-left:20px;
+        padding-top:159px; 
         text-align: center;
+        padding-bottom:3px;
     }
     .street-tacos-flex {
         display: grid;
         grid-template-columns: 1fr;
+        height: 696px;
     }
     menu {
         height: 80px;
@@ -541,14 +589,24 @@ footer ul {
         background: none;
         color: #0D0D0D;
         position: relative;
-        top: 168px;
+        top: 444px;
         width: 630px;
         left: -101px;
     }
     .details-section > ul > li {
         list-style-type: none;
-        font-weight: bold;
         padding-bottom:5px;
+        padding-left:3px;
+        width:200px;
+    }
+    .details-section > ul > li:nth-child(3) {
+        width: 200px;
+    }
+    .details-section > ul > li:nth-child(4) {
+        width: 250px;
+    }
+    .details-section > ul > li:nth-child(5) {
+        width: 200px;
     }
     .details-section > ul {
         margin:0;
@@ -561,7 +619,7 @@ footer ul {
     .directions-ingredients-section {
         display: grid;
         grid-template-columns: 1fr;
-        padding-top: 169px;
+        padding-top: 440px;
         width:414px;
     }
     .ingredient-list {
@@ -571,7 +629,7 @@ footer ul {
     .ingredient-list > li {
         text-align: left;
         padding:5px;
-        width: 100px;
+        width: 200px;
      }
      .direction-list {
         width:354px;
@@ -586,7 +644,10 @@ footer ul {
         position: relative;
         top: -35px;
         width:414px;
-        height:435px;
+        height:539px;
+    }
+    aside svg {
+        display: inline-block;
     }
      aside img {
         width:70px;
@@ -619,26 +680,94 @@ footer ul {
         grid-template-columns: 1fr;
     }
     footer ul {
-        top: -257px;
+        top: -270px;
         position: relative;
-        right: 49px;
         width: 400px;
-        
+        left: 33px;
+    }
+    footer li {
+        padding:0;
     }
     footer img {
         width: 150px;
-    height: 150px;
-    position: relative;
-    left: -21px;
-    top: 89px;
+        height: 150px;
+        position: relative;
+        left: -3px;
+        top: 89px;
     }
+
     footer p {
         position: relative;
     top: 91px;
-    left: -34px;
+    left: 14px;
     font-weight: bold;
     text-align: center;
     }
 }
+   /* print query */
+    
+   @media print {
+    h1, h2, h3, h4, p {
+        font-family: sans-serif;
+    }
+     nav ul li {
+        display: none;
+    }
+    img {
+        display:none;
+    }
+    .medium-nav {
+        display:none;
+    }
+    .black-letter {
+        display: none;
+    }
+    menu {
+        display:none;
+    }
+    h2 {
+        padding-top:0;
+    }
+    nav {
+        box-shadow: none;
+    }
+    form {
+        display:none;
+    }
+    .street-tacos-flex {
+        height:0;
+    }
+    .details-section {
+        position: relative;
+        top: 200px;
+        padding:0;
+        right:100px;
+        display: inline;
+    }
+   
 
-
+    .directions-ingredients-section {
+        position: relative;
+        top: 200px;
+    }
+    aside {
+        position: relative;
+        top:300px;
+        text-align: center;
+    }
+    aside div {
+        width:300px;
+    }
+    footer p {
+        font-family: sans-serif;
+        position: relative;
+        left:400px;
+        top:450px;
+    }
+    footer ul {
+        display:none;
+    }
+    @page {
+        margin: 1.27 cm;
+    }
+}
